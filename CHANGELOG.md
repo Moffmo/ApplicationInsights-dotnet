@@ -2,6 +2,10 @@
 
 This changelog will be used to generate documentation on [release notes page](http://azure.microsoft.com/en-us/documentation/articles/app-insights-release-notes-dotnet/).
 
+## Version 2.5.0-beta1
+- Method `Sanitize` on classes implementing `ITelemetry` does not modify the `TelemetryContext` fields any longer. Serailized event json and ETW event will still have context tags sanitized.
+
+
 ## Version 2.4.0-beta2
 - Removed metric aggregation functionality as there is not enough feedback on the API surface yet.
 
